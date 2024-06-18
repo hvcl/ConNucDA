@@ -1,2 +1,2 @@
 # ConNucDA
-Official implementation of a paper accepted on MICCAI 2024
+Pytorch implementation of Controllable and Efficient Multi-Class Pathology Nuclei Data Augmentation using Text-Conditioned Diffusion Models (MICCAI 2024)
