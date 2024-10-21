@@ -1,0 +1,88 @@
+model:
+  target: cldm.cldm.ControlLDM
+  params:
+    linear_start: 0.00085
+    linear_end: 0.0120
+    num_timesteps_cond: 1
+    log_every_t: 200
+    timesteps: 1000
+    first_stage_key: "jpg"
+    cond_stage_key: "txt"
+    control_key: "hint"
+    image_size: 64
+    channels: 3
+    cond_stage_trainable: false
+    conditioning_key: crossattn
+    monitor: val/loss_simple_ema
+    scale_factor: 0.18215
+    use_ema: False
+    only_mid_control: False
+
+    control_stage_config:
+      target: cldm.cldm.ControlNet
+      params:
+        image_size: 64 # unused
+        in_channels: 3
+        hint_channels: 7 # num_classes (4) + edge_map(1) + hv_map (2)
+        model_channels: 192
+        # attention_resolutions: [ 4, 2, 1 ]
+        # num_res_blocks: 2
+        # channel_mult: [ 1, 2, 4, 4 ]
+        attention_resolutions: [ 8, 4, 2 ]
+        num_res_blocks: 2
+        channel_mult: [ 1, 2, 3, 5 ]
+        num_heads: 1
+        use_spatial_transformer: True
+        transformer_depth: 1
+        context_dim: 512
+        use_checkpoint: True
+        legacy: False
+
+    unet_config:
+      target: cldm.cldm.ControlledUnetModel
+      params:
+        image_size: 64 # unused
+        in_channels: 3
+        out_channels: 3
+        model_channels: 192
+        # attention_resolutions: [ 4, 2, 1 ]
+        # num_res_blocks: 2
+        # channel_mult: [ 1, 2, 4, 4 ]
+        attention_resolutions: [ 8, 4, 2 ]
+        num_res_blocks: 2
+        channel_mult: [ 1, 2, 3, 5 ]        
+        num_heads: 1
+        use_spatial_transformer: True
+        transformer_depth: 1
+        context_dim: 512
+        use_checkpoint: True
+        legacy: False
+
+    first_stage_config:
+      target: ldm.models.autoencoder.VQModelInterface
+      params:
+        embed_dim: 3
+        n_embed: 8192
+        monitor: val/rec_loss
+        ddconfig:
+          double_z: false
+          z_channels: 3
+          resolution: 256
+          in_channels: 3
+          out_ch: 3
+          ch: 128
+          ch_mult:
+          - 1
+          - 2
+          - 4
+          num_res_blocks: 2
+          attn_resolutions: []
+          dropout: 0.0
+        lossconfig:
+          target: torch.nn.Identity
+
+    cond_stage_config:
+      target: ldm.modules.encoders.modules.FrozenCLIPEmbedder
+      params:
+        version: vinid/plip
+        max_length: 154
