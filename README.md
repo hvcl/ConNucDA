@@ -14,8 +14,8 @@ We present a novel approach for multi-class pathology nuclei data augmentation u
 
 The repository is organized into two main directories:
 
-- `label_synthesis/`: Code for generating synthetic nuclei labels using text-conditioned diffusion models[]
-- `image_synthesis/`: Code for synthesizing pathology images based on ControlNet[]
+- `label_synthesis/`: Code for generating synthetic nuclei labels using text-conditioned diffusion models
+- `image_synthesis/`: Code for synthesizing pathology images based on ControlNet
 
 ### Features
 
