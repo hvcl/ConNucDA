@@ -30,6 +30,12 @@ cd label_synthesis
 pip install -r requirements.txt
 ```
 
+### Checkpoints
+The model checkpoints will be made available soon.
+- Label synthesis model checkpoint: Coming soon
+- Image synthesis model checkpoint: Coming soon
+- Please check back later or watch this repository for updates on the availability of model checkpoints.
+
 ### To-do-list
 - Data link and preprocessing codes
 
