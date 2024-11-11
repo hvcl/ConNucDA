@@ -3,8 +3,7 @@ Pytorch implementation of Controllable and Efficient Multi-Class Pathology Nucle
 
 This repository contains the official implementation of the paper:
 
-**"Controllable and Efficient Multi-Class Pathology Nuclei Data Augmentation using Text-Conditioned Diffusion Models"**  
-Accepted at MICCAI 2024
+**"Controllable and Efficient Multi-Class Pathology Nuclei Data Augmentation using Text-Conditioned Diffusion Models" (MICCAI2024)** 
 
 ## Overview
 
