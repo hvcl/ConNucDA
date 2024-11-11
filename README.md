@@ -5,8 +5,8 @@ This repository contains the official implementation of the paper:
 
 **"Controllable and Efficient Multi-Class Pathology Nuclei Data Augmentation using Text-Conditioned Diffusion Models" (MICCAI2024)** 
 
-MICCAI version: [Paper](https://link.springer.com/chapter/10.1007/978-3-031-72083-3_4)
-Arvix version: [Paper](https://arxiv.org/abs/2407.14434)
+- MICCAI version: [Paper](https://link.springer.com/chapter/10.1007/978-3-031-72083-3_4)
+- Arvix version: [Paper](https://arxiv.org/abs/2407.14434)
 
 ## Overview
 
