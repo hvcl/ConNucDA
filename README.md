@@ -5,6 +5,9 @@ This repository contains the official implementation of the paper:
 
 **"Controllable and Efficient Multi-Class Pathology Nuclei Data Augmentation using Text-Conditioned Diffusion Models" (MICCAI2024)** 
 
+MICCAI version: [Paper](https://link.springer.com/chapter/10.1007/978-3-031-72083-3_4)
+Arvix version: [Paper](https://arxiv.org/abs/2407.14434)
+
 ## Overview
 
 We present a novel approach for multi-class pathology nuclei data augmentation using text-conditioned diffusion models. Our method offers controllable and efficient synthesis of both nuclei labels and images, addressing the challenges of limited and imbalanced datasets in pathology image analysis.
