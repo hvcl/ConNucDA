@@ -43,7 +43,7 @@ The model checkpoints will be made available soon.
 
 We would like to acknowledge the following projects that have contributed to our work:
 
-- Label synthesis part of this project is built upon the work of [GCDP (Generative Contextual Descriptor Prediction)](https://github.com/pmh9960/GCDP). We thank the authors for making their code available.
+- Label synthesis part of this project is built upon the work of [GCDP](https://github.com/pmh9960/GCDP). We thank the authors for making their code available.
 - Image synthesis part of our project utilizes [ControlNet](https://github.com/lllyasviel/ControlNet) as a baseline. We are grateful to the ControlNet team for their excellent work and open-source contribution.
 
 We express our sincere gratitude to the authors and contributors of these projects for their valuable work which has significantly aided our research.
