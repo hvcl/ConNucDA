@@ -27,7 +27,7 @@ The repository is organized into two main directories:
 
 ```bash
 cd label_synthesis
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 ### To-do-list
 - Data link and preprocessing codes
@@ -64,3 +64,4 @@ pages="36--46",
 abstract="In the field of computational pathology, deep learning algorithms have made significant progress in tasks such as nuclei segmentation and classification. However, the potential of these advanced methods is limited by the lack of available labeled data. Although image synthesis via recent generative models has been actively explored to address this challenge, existing works have barely addressed label augmentation and are mostly limited to single-class and unconditional label generation. In this paper, we introduce a novel two-stage framework for multi-class nuclei data augmentation using text-conditional diffusion models. In the first stage, we innovate nuclei label synthesis by generating multi-class semantic labels and corresponding instance maps through a joint diffusion model conditioned by text prompts that specify the label structure information. In the second stage, we utilize a semantic and text-conditional latent diffusion model to efficiently generate high-quality pathology images that align with the generated nuclei label images. We demonstrate the effectiveness of our method on large and diverse pathology nuclei datasets, with evaluations including qualitative and quantitative analyses, as well as assessments of downstream tasks.",
 isbn="978-3-031-72083-3"
 }
+```
