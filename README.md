@@ -27,7 +27,7 @@ The repository is organized into two main directories:
 
 ```bash
 cd label_synthesis
-pip install -r requirements.txt```
+pip install -r requirements.txt'''
 
 ### To-do-list
 - Data link and preprocessing codes
