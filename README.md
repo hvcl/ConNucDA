@@ -34,7 +34,8 @@ pip install -r requirements.txt
 
 ### Checkpoints
 The model checkpoints will be made available soon.
-- Label synthesis model checkpoint: Coming soon
+- Label synthesis model checkpoint: 
+  - [Lizard](https://drive.google.com/drive/folders/17NK-Qdga23PJrxTmCrpzcki1HVhewxNe?usp=sharing)
 - Image synthesis model checkpoint: Coming soon
 - Please check back later or watch this repository for updates on the availability of model checkpoints.
 
