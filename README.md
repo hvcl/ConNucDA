@@ -8,6 +8,16 @@ This repository contains the official implementation of the paper:
 - MICCAI version: [Paper](https://link.springer.com/chapter/10.1007/978-3-031-72083-3_4)
 - Arvix version: [Paper](https://arxiv.org/abs/2407.14434)
 
+## Updates
+
+### 2026-07-28
+
+- Released the recovered Lizard GCDP label-generation checkpoint and model card on [Hugging Face](https://huggingface.co/Hyun-Jic/ConNucDA).
+- Documented that the image-synthesis experiments fine-tuned the PathLDM ControlNet initialization (`control_plip_imagenet_ini_<dataset>_seg_edge_hv.ckpt`).
+- Documented the training entry points and final checkpoint references used by the released sampling scripts.
+
+> **Checkpoint scope:** the Hugging Face release currently contains the Lizard GCDP label generator only. It is not an image-synthesis ControlNet checkpoint. The original final image-synthesis weights are not present in the release workspace and will be added once recovered and verified.
+
 ## Overview
 
 We present a novel approach for multi-class pathology nuclei data augmentation using text-conditioned diffusion models. Our method offers controllable and efficient synthesis of both nuclei labels and images, addressing the challenges of limited and imbalanced datasets in pathology image analysis.
@@ -33,11 +43,10 @@ pip install -r requirements.txt
 ```
 
 ### Checkpoints
-The model checkpoints will be made available soon.
-- Label synthesis model checkpoint: 
-  - [Lizard](https://drive.google.com/drive/folders/17NK-Qdga23PJrxTmCrpzcki1HVhewxNe?usp=sharing)
-- Image synthesis model checkpoint: Coming soon
-- Please check back later or watch this repository for updates on the availability of model checkpoints.
+
+- Label synthesis: the recovered Lizard GCDP 256 x 256 checkpoint (300,000 training steps) is available on [Hugging Face](https://huggingface.co/Hyun-Jic/ConNucDA).
+- Image synthesis: the model was initialized from PathLDM ControlNet weights and then fine-tuned with `image_synthesis/train-seg_edge_hv.py` or `image_synthesis/train-seg_edge_hv-resume.py`. The released sampling scripts reference the final runs as Lizard `epoch=53-step=20735.ckpt`, PanNuke `epoch=249-step=49999.ckpt`, and EndoNuke `epoch=1041-step=49999.ckpt`.
+- The original final image-synthesis files themselves are not present locally, so they are not substituted with different weights in the Hugging Face release.
 
 ### To-do-list
 - Data link and preprocessing codes
