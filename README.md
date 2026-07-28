@@ -64,23 +64,12 @@ We express our sincere gratitude to the authors and contributors of these projec
 
 If you find this work useful in your research, please consider citing our paper:
 ```bibtex
-@InProceedings{10.1007/978-3-031-72083-3_4,
-author="Oh, Hyun-Jic
-and Jeong, Won-Ki",
-editor="Linguraru, Marius George
-and Dou, Qi
-and Feragen, Aasa
-and Giannarou, Stamatia
-and Glocker, Ben
-and Lekadir, Karim
-and Schnabel, Julia A.",
-title="Controllable and Efficient Multi-class Pathology Nuclei Data Augmentation Using Text-Conditioned Diffusion Models",
-booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2024",
-year="2024",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="36--46",
-abstract="In the field of computational pathology, deep learning algorithms have made significant progress in tasks such as nuclei segmentation and classification. However, the potential of these advanced methods is limited by the lack of available labeled data. Although image synthesis via recent generative models has been actively explored to address this challenge, existing works have barely addressed label augmentation and are mostly limited to single-class and unconditional label generation. In this paper, we introduce a novel two-stage framework for multi-class nuclei data augmentation using text-conditional diffusion models. In the first stage, we innovate nuclei label synthesis by generating multi-class semantic labels and corresponding instance maps through a joint diffusion model conditioned by text prompts that specify the label structure information. In the second stage, we utilize a semantic and text-conditional latent diffusion model to efficiently generate high-quality pathology images that align with the generated nuclei label images. We demonstrate the effectiveness of our method on large and diverse pathology nuclei datasets, with evaluations including qualitative and quantitative analyses, as well as assessments of downstream tasks.",
-isbn="978-3-031-72083-3"
+@inproceedings{oh2024controllable,
+  title={Controllable and efficient multi-class pathology nuclei data augmentation using text-conditioned diffusion models},
+  author={Oh, Hyun-Jic and Jeong, Won-Ki},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={36--46},
+  year={2024},
+  organization={Springer}
 }
 ```

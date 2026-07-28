@@ -44,10 +44,10 @@ The checkpoint is released for non-commercial research and reproducibility. User
 ## Citation
 
 ```bibtex
-@inproceedings{oh2024connucda,
-  title={Controllable and Efficient Multi-Class Pathology Nuclei Data Augmentation using Text-Conditioned Diffusion Models},
+@inproceedings{oh2024controllable,
+  title={Controllable and efficient multi-class pathology nuclei data augmentation using text-conditioned diffusion models},
   author={Oh, Hyun-Jic and Jeong, Won-Ki},
-  booktitle={Medical Image Computing and Computer Assisted Intervention -- MICCAI 2024},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
   pages={36--46},
   year={2024},
   organization={Springer}
